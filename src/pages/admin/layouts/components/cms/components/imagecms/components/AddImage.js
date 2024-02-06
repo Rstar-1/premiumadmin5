@@ -1,0 +1,82 @@
+import axios from "axios";
+import FeatherIcon from "feather-icons-react";
+import React, { useState } from "react";
+
+const AddImage = () => {
+  const [Position, SetPosition] = useState("");
+  const [Image, setImage] = useState(null);
+
+  const handleFileChange = (e) => {
+    setImage(e.target.files[0]);
+  };
+  const addUserdata = async (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    formData.append("image", Image);
+    formData.append("position", Position);
+
+    const response = await axios({
+      method: "post",
+      url: "http://localhost:8000/api/imageregister",
+      data: formData,
+    });
+    console.log(response.data);
+    if (response.status === 201) {
+      alert("completeda");
+    } else {
+      alert("add Not Submitted");
+    }
+  };
+
+  return (
+    <div>
+      <div className="mtpx6 grid-cols-1 gap-12">
+        <div className="w-full">
+          <label className="fsize13 textforth">Position</label>
+          <div>
+            <input
+              className="side-input mtpx5 h-input fsize13 rounded-5 plpx10 border-ec"
+              placeholder="Enter Position"
+              type="text"
+              onChange={(e) => SetPosition(e.target.value)}
+              name="position"
+              id="position"
+            />
+          </div>
+        </div>
+
+        <div className="w-full">
+          <label className="fsize13 textforth">Image</label>
+          <div className="relative">
+            <div className="border-images side-input mtpx3">
+              <div className="text-center flex justify-center">
+                <div>
+                  <FeatherIcon icon="upload-cloud" size={35} />
+                  <p className="textforth">Upload Here</p>
+                </div>
+              </div>
+            </div>
+            <input
+              className="absolute top-0 left-0 img-input h-full fsize13 rounded-5 plpx10 border-ec"
+              placeholder="Enter"
+              type="file"
+              onChange={handleFileChange}
+              name="imagecms"
+              id="imagecms"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="mtpx15 flex justify-center">
+        <button
+          className="border-0 cursor-pointer font-500 textwhite rounded-5 ptpx6 pbpx6 plpx25 prpx25 fsize13 bgprimary"
+          onClick={addUserdata}
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default AddImage;

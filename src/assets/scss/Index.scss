@@ -1,0 +1,595 @@
+/* ======================= Start-Color ======================= */
+$primary: #7367f0 !important;
+$secondary: #c54b8c !important;
+$tertiary: #1f1f1f !important;
+$forth: #0f172a !important;
+$success: #4bb543 !important;
+$warning: #ff5722 !important;
+$danger: red !important;
+$info: #2196f3 !important;
+$white: #fff !important;
+$dark: #000 !important;
+$gray: gray !important;
+/* ======================= End-Color ======================= */
+
+/* ======================= Start-Bg-Color ======================= */
+.bgprimary {
+  background: $primary;
+}
+.bgsecondary {
+  background: $secondary;
+}
+.bgtertiary {
+  background: $tertiary;
+}
+.bgforth {
+  background: $forth;
+}
+.bgsuccess {
+  background: $success;
+}
+.bgwarning {
+  background: $warning;
+}
+.bgdanger {
+  background: $danger;
+}
+.bginfo {
+  background: $info;
+}
+.bgwhite {
+  background: $white;
+}
+.bggray {
+  background: $gray;
+}
+.bgdark {
+  background: $dark;
+}
+.bg-light-primary {
+  background: #f1f0f9 !important;
+}
+.bg-light-secondary {
+  background: #faf1f1 !important;
+}
+.bg-light-success {
+  background: rgb(232, 243, 232) !important;
+}
+.bg-light-warning {
+  background: #faf0ed !important;
+}
+.bg-light-danger {
+  background: rgb(251, 243, 243) !important;
+}
+.bg-ec {
+  background-color: #ececec !important;
+}
+.bg-fa {
+  background-color: #fafafa !important;
+}
+.bg-purple {
+  background-color: #6610f2 !important;
+}
+.bg-blues {
+  background-color: #000940 !important;
+}
+.bg-f4f5f6 {
+  background: #f4f5f6 !important;
+}
+.bg-e8f2fc {
+  background: #e8f2fc !important;
+}
+.bg-glass {
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.bg-glass2 {
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(1.7px);
+}
+.liner-color {
+  background: linear-gradient(45deg, #e66465, #9198e5) !important;
+}
+.liner-color2 {
+  background: linear-gradient(45deg, #3f87a6, #f69d3c) !important;
+}
+.liner-color3 {
+  background: linear-gradient(45deg, #0045c7, #ff2c7d) !important;
+}
+/* ======================= End-Bg-Color ======================= */
+
+/* ======================= Start-Text-Color ======================= */
+.textprimary {
+  color: $primary;
+}
+.textsecondary {
+  color: $secondary;
+}
+.texttertiary {
+  color: $tertiary;
+}
+.textforth {
+  color: $forth;
+}
+.textsuccess {
+  color: $success;
+}
+.textwarning {
+  color: $warning;
+}
+.textdanger {
+  color: $danger;
+}
+.textinfo {
+  color: $info;
+}
+.textwhite {
+  color: $white;
+}
+.textgray {
+  color: $gray;
+}
+.textdark {
+  color: $dark;
+}
+/* ======================= End-Text-Color ======================= */
+
+/* ======================= Start-Font-Family ======================= */
+@font-face {
+  font-family: "poppins-regular";
+  src: local("poppins-regular"),
+    url("../fonts/Poppins/Poppins-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "poppins-regular" !important;
+}
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+button,
+input,
+li {
+  font-family: "poppins-regular" !important;
+}
+/* ======================= End-Font-Family ======================= */
+
+/* ======================= Start-scrollbar ======================= */
+::-webkit-scrollbar {
+  width: 0px;
+}
+/* ======================= End-scrollbar ======================= */
+
+/* ======================= Start-Maincss ======================= */
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+}
+p {
+  margin: 0px;
+  padding: 0px;
+}
+.list-none {
+  list-style: none !important;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+.error-h {
+  height: 90vh !important;
+  @media (max-width: 640px) {
+    height: 60vh !important;
+  }
+}
+.up-box {
+  width: 50px !important;
+  height: 50px !important;
+  @media (max-width: 640px) {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+.up-img {
+  width: 25px !important;
+  height: 25px !important;
+  @media (max-width: 640px) {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+.success-img {
+  width: 65px !important;
+  height: 65px !important;
+  @media (max-width: 640px) {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+.z-999 {
+  z-index: 9999 !important;
+}
+.h-100 {
+  height: 100vh !important;
+}
+.decimal {
+  list-style: decimal !important;
+}
+.disc {
+  list-style: disc !important;
+}
+.dot {
+  width: 12px !important;
+  height: 12px !important;
+}
+.border-0 {
+  border: none !important;
+}
+.border-ec {
+  border: 1px solid #ececec !important;
+}
+.bordb {
+  border-bottom: 1px solid #f4f5f6 !important;
+}
+.center-absolute {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+.w-side {
+  width: 17% !important;
+}
+.w-route {
+  width: 83% !important;
+}
+.d-shadow {
+  box-shadow: 0 2px 12px 0 #0000001a !important;
+}
+/* ======================= End-Maincss ======================= */
+
+/* ======================= Start-Pagination ======================= */
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.pagination li {
+  background: #ececec;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+  cursor: pointer;
+}
+.pagination .selected {
+  background: $primary;
+  color: $white;
+}
+/* ======================= End-Pagination ======================= */
+
+/* ======================= Start-loader ======================= */
+.loader {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top: 2px solid $tertiary;
+  border-bottom: 2px solid $tertiary;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+.loader2 {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top: 2px solid $tertiary;
+  border-bottom: 2px solid $tertiary;
+  width: 70px;
+  height: 70px;
+  animation: spins 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spins {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* ======================= End-loader ======================= */
+
+/* ======================= Start-Animatedcss ======================= */
+.marquee p {
+  transform: translateX(100%);
+  animation: scroll-left 10s linear infinite;
+}
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+.clip {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%) !important;
+}
+.rotate-d {
+  transform: rotate(20deg) !important;
+}
+.dashboard .CircularProgressbar .CircularProgressbar-path {
+  stroke: $primary;
+}
+.dashboard .CircularProgressbar .CircularProgressbar-text {
+  fill: $primary;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tab input:checked ~ .tab__content {
+  max-height: 100%;
+}
+.tab__label::after {
+  width: 1em;
+  height: 100%;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+.tab input:checked + .tab__label::after {
+  transform: rotate(270deg);
+}
+/* ======================= End-Animatedcss ======================= */
+
+/* ======================= Start-Table ======================= */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  border: 1px solid #ececec;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background: $primary;
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 10px;
+}
+tr:nth-child(even):hover {
+  background-color: #f8f8fb;
+}
+.h-input {
+  height: 35px !important;
+}
+.cust-scroll {
+  height: 80vh !important;
+  overflow-y: auto !important;
+}
+.side-scroll {
+  height: 90vh !important;
+  overflow-y: auto !important;
+}
+.sidebar-w {
+  width: 25% !important;
+}
+.side-input {
+  width: 95% !important;
+}
+.border-images {
+  border: 1px dashed #3d3c3c !important;
+  height: 190px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 10px !important;
+}
+.img-input {
+  width: 93.5% !important;
+  height: 190px !important;
+  opacity: 0 !important;
+}
+.side-img {
+  width: 350px !important;
+  height: 350px !important;
+}
+/* ======================= End-Table ======================= */
+
+/* ======================= Start-Button ======================= */
+.primarybtn {
+  background: transparent !important;
+  border: 1px solid #7367f0 !important;
+  color: #7367f0 !important;
+}
+.primarybtn:hover {
+  background: #7367f0 !important;
+  color: #fff !important;
+}
+.secondarybtn {
+  background: transparent !important;
+  border: 1px solid #e66465 !important;
+  color: #e66465 !important;
+}
+.secondarybtn:hover {
+  background: #e66465 !important;
+  color: #fff !important;
+}
+.whitebtn {
+  background: transparent !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+}
+.whitebtn:hover {
+  background: #fff !important;
+  color: #7367f0 !important;
+}
+/* ======================= End-Button ======================= */
+
+/* ======================= Start-Sidebar ======================= */
+.sidebar-logo {
+  width: 90px !important;
+  height: 100% !important;
+}
+.activesidebar {
+  color: gray;
+}
+.active {
+  color: $primary;
+}
+.hover-col:hover {
+  background: #fafafa;
+  border-radius: 4px;
+}
+.dot-dash {
+  width: 20px !important;
+  height: 20px !important;
+}
+.sidebar-img {
+  width: 120px !important;
+  height: 120px !important;
+}
+/* ======================= End-Sidebar ======================= */
+
+/* ======================= Start-Header ======================= */
+.header-logo {
+  width: 40px !important;
+  height: 40px !important;
+}
+.border-h {
+  border-radius: 10px !important;
+}
+/* ======================= End-Header ======================= */
+
+/* ======================= Start-Login ======================= */
+.w-login {
+  width: 97% !important;
+}
+/* ======================= End-Login ======================= */
+
+/* ======================= Start-dashboard ======================= */
+.h-camp {
+  height: 150px !important;
+}
+.h-map {
+  height: 170px !important;
+}
+.social-img {
+  width: 60px !important;
+  height: 60px !important;
+}
+.gol-img {
+  width: 40px !important;
+  height: 40px !important;
+}
+.minus-dash {
+  margin-top: -10% !important;
+}
+.dash-scroll {
+  overflow-y: auto !important;
+  height: 86vh !important;
+}
+/* ======================= End-dashboard ======================= */
+
+/* ======================= Start-crm ======================= */
+////
+/* ======================= End-crm ======================= */
+
+/* ======================= Start-blog ======================= */
+.blog-img {
+  width: 100% !important;
+  height: 50px !important;
+}
+/* ======================= End-blog ======================= */
+
+/* ======================= Start-cms ======================= */
+.cms-img {
+  width: 100% !important;
+  height: 50px !important;
+}
+.hover-cms {
+  background: #e9e9f6 !important;
+}
+.bordactive-tab {
+  border-bottom: 2px solid #7367f0 !important;
+}
+.bord-tab {
+  border-bottom: 2px solid #ececec !important;
+}
+.cms-image {
+  width: 50px !important;
+  height: 50px !important;
+}
+.cms-edit-img {
+  width: 30% !important;
+  height: 150px !important;
+}
+/* ======================= End-cms ======================= */
+
+/* ======================= Start-project ======================= */
+.project-image {
+  width: 100px !important;
+  height: 50px !important;
+}
+.project-edit-img {
+  width: 30% !important;
+  height: 150px !important;
+}
+/* ======================= End-project ======================= */
+
+/* ======================= Start-brand ======================= */
+.brand-image {
+  width: 100px !important;
+  height: 50px !important;
+}
+.brand-edit-img {
+  width: 30% !important;
+  height: 150px !important;
+}
+/* ======================= End-brand ======================= */
+
+/* ======================= Start-bill ======================= */
+.bill-img {
+  width: 50px !important;
+  height: 50px !important;
+}
+/* ======================= End-bill ======================= */
+
